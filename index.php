@@ -1,425 +1,480 @@
+<?php
+$ip=get_client_ip();
+$query = @unserialize(file_get_contents('http://ip-api.com/php/'.$ip));
+
+
+
+function get_client_ip() {
+    $ipaddress = '';
+    if (getenv('HTTP_CLIENT_IP'))
+        $ipaddress = getenv('HTTP_CLIENT_IP');
+    else if(getenv('HTTP_X_FORWARDED_FOR'))
+        $ipaddress = getenv('HTTP_X_FORWARDED_FOR');
+    else if(getenv('HTTP_X_FORWARDED'))
+        $ipaddress = getenv('HTTP_X_FORWARDED');
+    else if(getenv('HTTP_FORWARDED_FOR'))
+        $ipaddress = getenv('HTTP_FORWARDED_FOR');
+    else if(getenv('HTTP_FORWARDED'))
+       $ipaddress = getenv('HTTP_FORWARDED');
+    else if(getenv('REMOTE_ADDR'))
+        $ipaddress = getenv('REMOTE_ADDR');
+    else
+        $ipaddress = 'UNKNOWN';
+    return $ipaddress;
+}
+
+?>
 <!DOCTYPE html>
-<html lang="en-US" lang="en-US">
+<html style="" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Flowers Delivery Service</title>
+    <meta name="description" content="Kutriyaaaa">
+    <meta name="keywords" content="agriculture, florist, flowers, garden, gardener, grass, irrigation, landscape, landscaper, landscaping, lawn, lawn services, mowing">
+    <meta name="author" content="rometheme.net"> 
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
 
-<!-- Mirrored from iphonerepairmumbai.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Jan 2020 09:28:07 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-<meta name="google-site-verification" content="bDLQhbYZ0uExKYPjL7kiBjnCn24fM5wnSyvrbh-3dYo"/>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>
-iPhone Repair Mumbai - iPhone Repair Shop in Mumbai - Apple iPhone Screen Repair Service      </title>
-<link rel="profile" href="#">
-<link rel="pingback" href="xmlrpc.php">
-<link rel="shortcut icon" href="wp-content/uploads/2017/10/fevicon.html" type="image/x-icon"/>
-<link rel="icon" type="image/x-icon" href="wp-content/uploads/2018/04/images.png"/>
-<title>iPhone Repair Mumbai - iPhone Repair Shop in Mumbai - Apple iPhone Screen Repair Service</title>
-<meta name="description" content="iPhone Repair Mumbai offers trustworthy repair service for all iPhone models, iPhone screen repair at a reasonable price at our iPhone Repair Shop in Mumbai. iPhone Repair in Mumbai offers doorstep repair service and same-day repair service all over Mumbai. Call us 7303107107 for iPhone broken Screen Replacement &amp; iPhone broken screen repair or visit our Apple iPhone repair shop at Mumbai."/>
-<link rel="canonical" href="index.html"/>
-<meta property="og:locale" content="en_US"/>
-<meta property="og:type" content="website"/>
-<meta property="og:title" content="iPhone Repair Mumbai - iPhone Repair Shop in Mumbai - Apple iPhone Screen Repair Service"/>
-<meta property="og:description" content="iPhone Repair Mumbai offers trustworthy repair service for all iPhone models, iPhone screen repair at a reasonable price at our iPhone Repair Shop in Mumbai. iPhone Repair in Mumbai offers doorstep repair service and same-day repair service all over Mumbai. Call us 7303107107 for iPhone broken Screen Replacement &amp; iPhone broken screen repair or visit our Apple iPhone repair shop at Mumbai."/>
-<meta property="og:url" content="index.html"/>
-<meta property="og:site_name" content="Iphone Repair Mumbai"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:description" content="iPhone Repair Mumbai offers trustworthy repair service for all iPhone models, iPhone screen repair at a reasonable price at our iPhone Repair Shop in Mumbai. iPhone Repair in Mumbai offers doorstep repair service and same-day repair service all over Mumbai. Call us 7303107107 for iPhone broken Screen Replacement &amp; iPhone broken screen repair or visit our Apple iPhone repair shop at Mumbai."/>
-<meta name="twitter:title" content="iPhone Repair Mumbai - iPhone Repair Shop in Mumbai - Apple iPhone Screen Repair Service"/>
-<link rel='dns-prefetch' href='http://s.w.org/'/>
-<link rel="alternate" type="application/rss+xml" title="Iphone Repair Mumbai &raquo; Feed" href="feed/index.html"/>
-<link rel="alternate" type="application/rss+xml" title="Iphone Repair Mumbai &raquo; Comments Feed" href="comments/feed/index.html"/>
-<link rel="stylesheet" type="text/css" href="wp-content/cache/wpfc-minified/kp9wbe8k/8f5l0.css" media="all"/>
-<link rel='https://api.w.org/' href='wp-json/index.html'/>
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd"/>
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml"/> 
-<meta name="generator" content="WordPress 4.9.13"/>
-<style>#callnowbutton{display:none;}
-@media screen and (max-width:650px){#callnowbutton {display:block; position:fixed; text-decoration:none; z-index:2147483647;width:65px; height:65px; border-radius:50%; border-top:1px solid #4ffe2d; bottom:15px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);transform: scale(0.7);right:20px;background:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNjAgNjAiPjxwYXRoIGQ9Ik03LjEwNCAxNC4wMzJsMTUuNTg2IDEuOTg0YzAgMC0wLjAxOSAwLjUgMCAwLjk1M2MwLjAyOSAwLjc1Ni0wLjI2IDEuNTM0LTAuODA5IDIuMSBsLTQuNzQgNC43NDJjMi4zNjEgMy4zIDE2LjUgMTcuNCAxOS44IDE5LjhsMTYuODEzIDEuMTQxYzAgMCAwIDAuNCAwIDEuMSBjLTAuMDAyIDAuNDc5LTAuMTc2IDAuOTUzLTAuNTQ5IDEuMzI3bC02LjUwNCA2LjUwNWMwIDAtMTEuMjYxIDAuOTg4LTI1LjkyNS0xMy42NzRDNi4xMTcgMjUuMyA3LjEgMTQgNy4xIDE0IiBmaWxsPSIjMDA5ZjAwIi8+PHBhdGggZD0iTTcuMTA0IDEzLjAzMmw2LjUwNC02LjUwNWMwLjg5Ni0wLjg5NSAyLjMzNC0wLjY3OCAzLjEgMC4zNWw1LjU2MyA3LjggYzAuNzM4IDEgMC41IDIuNTMxLTAuMzYgMy40MjZsLTQuNzQgNC43NDJjMi4zNjEgMy4zIDUuMyA2LjkgOS4xIDEwLjY5OWMzLjg0MiAzLjggNy40IDYuNyAxMC43IDkuMSBsNC43NC00Ljc0MmMwLjg5Ny0wLjg5NSAyLjQ3MS0xLjAyNiAzLjQ5OC0wLjI4OWw3LjY0NiA1LjQ1NWMxLjAyNSAwLjcgMS4zIDIuMiAwLjQgMy4xMDVsLTYuNTA0IDYuNSBjMCAwLTExLjI2MiAwLjk4OC0yNS45MjUtMTMuNjc0QzYuMTE3IDI0LjMgNy4xIDEzIDcuMSAxMyIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==) center/50px 50px no-repeat #22d100;}}#callnowbutton .NoButtonText{display:none;}</style>
-<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-<style>button#responsive-menu-button,
-#responsive-menu-container{display:none;-webkit-text-size-adjust:100%;}
-@media screen and (max-width: 800px) {
-#responsive-menu-container{display:block;position:fixed;top:0;bottom:0;z-index:99998;padding-bottom:5px;margin-bottom:-5px;outline:1px solid transparent;overflow-y:auto;overflow-x:hidden;}
-#responsive-menu-container .responsive-menu-search-box{width:100%;padding:0 2%;border-radius:2px;height:50px;-webkit-appearance:none;}
-#responsive-menu-container.push-left,
-#responsive-menu-container.slide-left{transform:translateX(-100%);-ms-transform:translateX(-100%);-webkit-transform:translateX(-100%);-moz-transform:translateX(-100%);}
-.responsive-menu-open #responsive-menu-container.push-left,
-.responsive-menu-open #responsive-menu-container.slide-left{transform:translateX(0);-ms-transform:translateX(0);-webkit-transform:translateX(0);-moz-transform:translateX(0);}
-#responsive-menu-container.push-top,
-#responsive-menu-container.slide-top{transform:translateY(-100%);-ms-transform:translateY(-100%);-webkit-transform:translateY(-100%);-moz-transform:translateY(-100%);}
-.responsive-menu-open #responsive-menu-container.push-top,
-.responsive-menu-open #responsive-menu-container.slide-top{transform:translateY(0);-ms-transform:translateY(0);-webkit-transform:translateY(0);-moz-transform:translateY(0);}
-#responsive-menu-container.push-right,
-#responsive-menu-container.slide-right{transform:translateX(100%);-ms-transform:translateX(100%);-webkit-transform:translateX(100%);-moz-transform:translateX(100%);}
-.responsive-menu-open #responsive-menu-container.push-right,
-.responsive-menu-open #responsive-menu-container.slide-right{transform:translateX(0);-ms-transform:translateX(0);-webkit-transform:translateX(0);-moz-transform:translateX(0);}
-#responsive-menu-container.push-bottom,
-#responsive-menu-container.slide-bottom{transform:translateY(100%);-ms-transform:translateY(100%);-webkit-transform:translateY(100%);-moz-transform:translateY(100%);}
-.responsive-menu-open #responsive-menu-container.push-bottom,
-.responsive-menu-open #responsive-menu-container.slide-bottom{transform:translateY(0);-ms-transform:translateY(0);-webkit-transform:translateY(0);-moz-transform:translateY(0);}
-#responsive-menu-container,
-#responsive-menu-container:before,
-#responsive-menu-container:after,
-#responsive-menu-container *,
-#responsive-menu-container *:before,
-#responsive-menu-container *:after{box-sizing:border-box;margin:0;padding:0;}
-#responsive-menu-container #responsive-menu-search-box,
-#responsive-menu-container #responsive-menu-additional-content,
-#responsive-menu-container #responsive-menu-title{padding:25px 5%;}
-#responsive-menu-container #responsive-menu,
-#responsive-menu-container #responsive-menu ul{width:100%;}
-#responsive-menu-container #responsive-menu ul.responsive-menu-submenu{display:none;}
-#responsive-menu-container #responsive-menu ul.responsive-menu-submenu.responsive-menu-submenu-open{display:block;}
-#responsive-menu-container #responsive-menu ul.responsive-menu-submenu-depth-1 a.responsive-menu-item-link{padding-left:10%;}
-#responsive-menu-container #responsive-menu ul.responsive-menu-submenu-depth-2 a.responsive-menu-item-link{padding-left:15%;}
-#responsive-menu-container #responsive-menu ul.responsive-menu-submenu-depth-3 a.responsive-menu-item-link{padding-left:20%;}
-#responsive-menu-container #responsive-menu ul.responsive-menu-submenu-depth-4 a.responsive-menu-item-link{padding-left:25%;}
-#responsive-menu-container #responsive-menu ul.responsive-menu-submenu-depth-5 a.responsive-menu-item-link{padding-left:30%;}
-#responsive-menu-container li.responsive-menu-item{width:100%;list-style:none;}
-#responsive-menu-container li.responsive-menu-item a{width:100%;display:block;text-decoration:none;padding:0 5%;position:relative;}
-#responsive-menu-container li.responsive-menu-item a .fa{margin-right:15px;}
-#responsive-menu-container li.responsive-menu-item a .responsive-menu-subarrow{position:absolute;top:0;bottom:0;text-align:center;overflow:hidden;}
-#responsive-menu-container li.responsive-menu-item a .responsive-menu-subarrow  .fa{margin-right:0;}
-button#responsive-menu-button .responsive-menu-button-icon-inactive{display:none;}
-button#responsive-menu-button{z-index:99999;display:none;overflow:hidden;outline:none;}
-button#responsive-menu-button img{max-width:100%;}
-.responsive-menu-label{display:inline-block;font-weight:600;margin:0 5px;vertical-align:middle;}
-.responsive-menu-label .responsive-menu-button-text-open{display:none;}
-.responsive-menu-accessible{display:inline-block;}
-.responsive-menu-accessible .responsive-menu-box{display:inline-block;vertical-align:middle;}
-.responsive-menu-label.responsive-menu-label-top,
-.responsive-menu-label.responsive-menu-label-bottom{display:block;margin:0 auto;}
-button#responsive-menu-button{padding:0 0;display:inline-block;cursor:pointer;transition-property:opacity, filter;transition-duration:0.15s;transition-timing-function:linear;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;margin:0;overflow:visible;}
-.responsive-menu-box{width:25px;height:19px;display:inline-block;position:relative;}
-.responsive-menu-inner{display:block;top:50%;margin-top:-1.5px;}
-.responsive-menu-inner,
-.responsive-menu-inner::before,
-.responsive-menu-inner::after{width:25px;height:3px;background-color:#fff;border-radius:4px;position:absolute;transition-property:transform;transition-duration:0.15s;transition-timing-function:ease;}
-.responsive-menu-open .responsive-menu-inner,
-.responsive-menu-open .responsive-menu-inner::before,
-.responsive-menu-open .responsive-menu-inner::after{background-color:#fff;}
-button#responsive-menu-button:hover .responsive-menu-inner,
-button#responsive-menu-button:hover .responsive-menu-inner::before,
-button#responsive-menu-button:hover .responsive-menu-inner::after,
-button#responsive-menu-button:hover .responsive-menu-open .responsive-menu-inner,
-button#responsive-menu-button:hover .responsive-menu-open .responsive-menu-inner::before,
-button#responsive-menu-button:hover .responsive-menu-open .responsive-menu-inner::after,
-button#responsive-menu-button:focus .responsive-menu-inner,
-button#responsive-menu-button:focus .responsive-menu-inner::before,
-button#responsive-menu-button:focus .responsive-menu-inner::after,
-button#responsive-menu-button:focus .responsive-menu-open .responsive-menu-inner,
-button#responsive-menu-button:focus .responsive-menu-open .responsive-menu-inner::before,
-button#responsive-menu-button:focus .responsive-menu-open .responsive-menu-inner::after{background-color:#fff;}
-.responsive-menu-inner::before,
-.responsive-menu-inner::after{content:"";display:block;}
-.responsive-menu-inner::before{top:-8px;}
-.responsive-menu-inner::after{bottom:-8px;}
-.responsive-menu-boring .responsive-menu-inner,
-.responsive-menu-boring .responsive-menu-inner::before,
-.responsive-menu-boring .responsive-menu-inner::after{transition-property:none;}
-.responsive-menu-boring.is-active .responsive-menu-inner{transform:rotate(45deg);}
-.responsive-menu-boring.is-active .responsive-menu-inner::before{top:0;opacity:0;}
-.responsive-menu-boring.is-active .responsive-menu-inner::after{bottom:0;transform:rotate(-90deg);}
-button#responsive-menu-button{width:55px;height:55px;position:fixed;top:15px;right:5%;background:#000}
-.responsive-menu-open button#responsive-menu-button{background:#000}
-.responsive-menu-open button#responsive-menu-button:hover,
-.responsive-menu-open button#responsive-menu-button:focus,
-button#responsive-menu-button:hover,
-button#responsive-menu-button:focus{background:#000}
-button#responsive-menu-button .responsive-menu-box{color:#fff;}
-.responsive-menu-open button#responsive-menu-button .responsive-menu-box{color:#fff;}
-.responsive-menu-label{color:#fff;font-size:14px;line-height:13px;}
-button#responsive-menu-button{display:inline-block;transition:transform 0.5s, background-color 0.5s;}
-#responsive-menu-container{width:75%;left:0;transition:transform 0.5s;text-align:left;background:#212121;}
-#responsive-menu-container #responsive-menu-wrapper{background:#212121;}
-#responsive-menu-container #responsive-menu-additional-content{color:#fff;}
-#responsive-menu-container .responsive-menu-search-box{background:#fff;border:2px solid #dadada;color:#333;}
-#responsive-menu-container .responsive-menu-search-box:-ms-input-placeholder{color:#C7C7CD;}
-#responsive-menu-container .responsive-menu-search-box::-webkit-input-placeholder{color:#C7C7CD;}
-#responsive-menu-container .responsive-menu-search-box:-moz-placeholder{color:#C7C7CD;opacity:1;}
-#responsive-menu-container .responsive-menu-search-box::-moz-placeholder{color:#C7C7CD;opacity:1;}
-#responsive-menu-container .responsive-menu-item-link,
-#responsive-menu-container #responsive-menu-title,
-#responsive-menu-container .responsive-menu-subarrow{transition:background-color 0.5s, border-color 0.5s, color 0.5s;}
-#responsive-menu-container #responsive-menu-title{background-color:#212121;color:#fff;font-size:13px;}
-#responsive-menu-container #responsive-menu-title a{color:#fff;font-size:13px;text-decoration:none;}
-#responsive-menu-container #responsive-menu-title a:hover{color:#fff;}
-#responsive-menu-container #responsive-menu-title:hover{background-color:#212121;color:#fff;}
-#responsive-menu-container #responsive-menu-title:hover a{color:#fff;}
-#responsive-menu-container #responsive-menu-title #responsive-menu-title-image{display:inline-block;vertical-align:middle;}
-#responsive-menu-container #responsive-menu-title #responsive-menu-title-image img{}
-#responsive-menu-container #responsive-menu > li.responsive-menu-item:first-child > a{border-top:1px solid #212121;}
-#responsive-menu-container #responsive-menu li.responsive-menu-item .responsive-menu-item-link{font-size:13px;}
-#responsive-menu-container #responsive-menu li.responsive-menu-item a{height:40px;line-height:40px;border-bottom:1px solid #212121;color:#fff;background-color:#212121;}
-#responsive-menu-container #responsive-menu li.responsive-menu-item a:hover{color:#fff;background-color:#3f3f3f;border-color:#212121;}
-#responsive-menu-container #responsive-menu li.responsive-menu-item a:hover .responsive-menu-subarrow{color:#fff;border-color:#3f3f3f;background-color:#3f3f3f;}
-#responsive-menu-container #responsive-menu li.responsive-menu-item a:hover .responsive-menu-subarrow.responsive-menu-subarrow-active{color:#fff;border-color:#3f3f3f;background-color:#3f3f3f;}
-#responsive-menu-container #responsive-menu li.responsive-menu-item a .responsive-menu-subarrow{right:0;height:40px;line-height:40px;width:40px;color:#fff;border-left:1px solid #212121;background-color:#212121;}
-#responsive-menu-container #responsive-menu li.responsive-menu-item a .responsive-menu-subarrow.responsive-menu-subarrow-active{color:#fff;border-color:#212121;background-color:#212121;}
-#responsive-menu-container #responsive-menu li.responsive-menu-item a .responsive-menu-subarrow.responsive-menu-subarrow-active:hover{color:#fff;border-color:#3f3f3f;background-color:#3f3f3f;}
-#responsive-menu-container #responsive-menu li.responsive-menu-item a .responsive-menu-subarrow:hover{color:#fff;border-color:#3f3f3f;background-color:#3f3f3f;}
-#responsive-menu-container #responsive-menu li.responsive-menu-current-item > .responsive-menu-item-link{background-color:#212121;color:#fff;border-color:#212121;}
-#responsive-menu-container #responsive-menu li.responsive-menu-current-item > .responsive-menu-item-link:hover{background-color:#3f3f3f;color:#fff;border-color:#3f3f3f;}
-#responsive-menu-container #responsive-menu ul.responsive-menu-submenu li.responsive-menu-item .responsive-menu-item-link{font-size:13px;}
-#responsive-menu-container #responsive-menu ul.responsive-menu-submenu li.responsive-menu-item a{height:40px;line-height:40px;border-bottom:1px solid #212121;color:#fff;background-color:#212121;}
-#responsive-menu-container #responsive-menu ul.responsive-menu-submenu li.responsive-menu-item a:hover{color:#fff;background-color:#3f3f3f;border-color:#212121;}
-#responsive-menu-container #responsive-menu ul.responsive-menu-submenu li.responsive-menu-item a:hover .responsive-menu-subarrow{color:#fff;border-color:#3f3f3f;background-color:#3f3f3f;}
-#responsive-menu-container #responsive-menu ul.responsive-menu-submenu li.responsive-menu-item a:hover .responsive-menu-subarrow.responsive-menu-subarrow-active{color:#fff;border-color:#3f3f3f;background-color:#3f3f3f;}
-#responsive-menu-container #responsive-menu ul.responsive-menu-submenu li.responsive-menu-item a .responsive-menu-subarrow{right:0;height:40px;line-height:40px;width:40px;color:#fff;border-left:1px solid #212121;background-color:#212121;}
-#responsive-menu-container #responsive-menu ul.responsive-menu-submenu li.responsive-menu-item a .responsive-menu-subarrow.responsive-menu-subarrow-active{color:#fff;border-color:#212121;background-color:#212121;}
-#responsive-menu-container #responsive-menu ul.responsive-menu-submenu li.responsive-menu-item a .responsive-menu-subarrow.responsive-menu-subarrow-active:hover{color:#fff;border-color:#3f3f3f;background-color:#3f3f3f;}
-#responsive-menu-container #responsive-menu ul.responsive-menu-submenu li.responsive-menu-item a .responsive-menu-subarrow:hover{color:#fff;border-color:#3f3f3f;background-color:#3f3f3f;}
-#responsive-menu-container #responsive-menu ul.responsive-menu-submenu li.responsive-menu-current-item > .responsive-menu-item-link{background-color:#212121;color:#fff;border-color:#212121;}
-#responsive-menu-container #responsive-menu ul.responsive-menu-submenu li.responsive-menu-current-item > .responsive-menu-item-link:hover{background-color:#3f3f3f;color:#fff;border-color:#3f3f3f;}
-}</style><style></style>
-<body class="home blog mega-menu-primary responsive-menu-slide-left">
-<style>.vc_row.wpb_row.vc_row-fluid.text-center.vc_custom_1457025556613.pickup{background:url(wp-content/uploads/2017/11/pick-drop.png);background-position:center;padding:100px;
-}
-.vc_row.wpb_row.vc_row-fluid.text-center.vc_custom_1457025556613.pickup{}
-.vc_row.wpb_row.vc_row-fluid.text-center.vc_custom_1457025556613.pickup h3{text-align:center;line-height:1em !important;font-size:24px !important;}
-.vc_row.wpb_row.vc_row-fluid.text-center.vc_custom_1457025556613.pickup h5{text-align:right;}</style>
-<div id="spaces-main" class="pt-perspective"> <div class="page-section home-page" id="page-content">  <header class="l-header style-2 creative-layout"> <div class="top-bar-container contain-to-grid sticky"> <nav class="top-bar top_bar_logo_top" data-topbar> <div class="container"> <ul class="title-area col-md-3 col-sm-6"> <li class="name"> <h1> <i class="fa fa-mobile" aria-hidden="true"></i> iPhone Repair</h1> </li>   </li> </ul> <div class="creative top-bar-section col-md-5"> <div class="row"> <div class="menu-main-menu-container"> <div id="mega-menu-wrap-primary" class="mega-menu-wrap"><div class="mega-menu-toggle" tabindex="0"><div class="mega-toggle-blocks-left"></div><div class="mega-toggle-blocks-center"></div><div class="mega-toggle-blocks-right"><div class='mega-toggle-block mega-menu-toggle-block mega-toggle-block-1' id='mega-toggle-block-1'><span class='mega-toggle-label'><span class='mega-toggle-label-closed'>MENU</span><span class='mega-toggle-label-open'>MENU</span></span></div></div></div><ul id="mega-menu-primary" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js" data-event="hover_intent" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="disabled" data-effect-speed-mobile="200" data-second-click="close" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="600" data-unbind="true"><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-233' id='mega-menu-item-233'><a class="mega-menu-link" href="index.html" tabindex="0">Home</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-418' id='mega-menu-item-418'><a class="mega-menu-link" href="about/index.html" tabindex="0">About</a></li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-594' id='mega-menu-item-594'><a class="mega-menu-link" href="index.html" aria-haspopup="true" tabindex="0">Repair Models<span class="mega-indicator"></span></a> <ul class="mega-sub-menu"> <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-624' id='mega-menu-item-624'><a class="mega-menu-link" href="iphone-4s-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 4S Repair</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-595' id='mega-menu-item-595'><a class="mega-menu-link" href="iphone-5-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 5 Repair</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-596' id='mega-menu-item-596'><a class="mega-menu-link" href="iphone-5c-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 5C Repair</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-597' id='mega-menu-item-597'><a class="mega-menu-link" href="iphone-5s-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 5S Repair</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-599' id='mega-menu-item-599'><a class="mega-menu-link" href="iphone-6-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 6 Repair</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-598' id='mega-menu-item-598'><a class="mega-menu-link" href="iphone-6-plus-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 6 Plus Repair</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-601' id='mega-menu-item-601'><a class="mega-menu-link" href="iphone-6s-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 6S Repair</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-600' id='mega-menu-item-600'><a class="mega-menu-link" href="iphone-6s-plus-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 6S Plus Repair</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-711' id='mega-menu-item-711'><a class="mega-menu-link" href="iphone-7-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 7 Repair</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-710' id='mega-menu-item-710'><a class="mega-menu-link" href="iphone-7-plus-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 7 Plus Repair</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-709' id='mega-menu-item-709'><a class="mega-menu-link" href="iphone-8-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 8 Repair</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-743' id='mega-menu-item-743'><a class="mega-menu-link" href="iphone-8-plus-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 8 Plus Repair</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-939' id='mega-menu-item-939'><a class="mega-menu-link" href="apple-iphone-x-repair/index.html">iPhone X Repair</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-945' id='mega-menu-item-945'><a class="mega-menu-link" href="apple-iphone-xr-repair/index.html">iPhone XR Repair</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-938' id='mega-menu-item-938'><a class="mega-menu-link" href="apple-iphone-xs-repair/index.html">iPhone XS Repair</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-946' id='mega-menu-item-946'><a class="mega-menu-link" href="apple-iphone-xs-max-repair/index.html">iPhone XS Max Repair</a></li></ul>
-</li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-412' id='mega-menu-item-412'><a class="mega-menu-link" href="contact/index.html" tabindex="0">Contact</a></li></ul></div></div></div></div><div class="col-md-4 col-sm-6"> <div class="number"> <p><i class="fa fa-phone"></i> +91 7303 107 107 &nbsp; | &nbsp; Free Pick &amp; Drop</p></div></div></div></nav></div></header>	
-<main class="l-main">
-<div> <article> <div class="body field"> <div class="vc_row wpb_row vc_row-fluid" style="color: ;}"> <div class="wpb_column vc_column_container vc_col-sm-12" data-equalizer-watch> <div class="wpb_wrapper"> <div class="wonderpluginslider-container" id="wonderpluginslider-container-1" style="max-width:100%;margin:0 auto;padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px;"><div class="wonderpluginslider" id="wonderpluginslider-1" data-sliderid="1" data-width="1349" data-height="490" data-skin="content" data-autoplay="true" data-randomplay="false" data-loadimageondemand="false" data-transitiononfirstslide="false" data-autoplayvideo="false" data-isresponsive="true" data-fullwidth="true" data-isfullscreen="false" data-ratioresponsive="false" data-showtext="false" data-showtimer="false" data-showbottomshadow="false" data-navshowpreview="false" data-textautohide="true" data-lightboxresponsive="true" data-lightboxshownavigation="false" data-lightboxshowtitle="true" data-lightboxshowdescription="false" data-texteffectresponsive="true" data-scalemode="fill" data-arrowstyle="mouseover" data-transition="slice" data-loop="0" data-border="0" data-slideinterval="8000" data-arrowimage="arrows-32-32-4.png" data-arrowwidth="32" data-arrowheight="32" data-arrowtop="50" data-arrowmargin="0" data-navstyle="bullets" data-navimage="" data-navwidth="16" data-navheight="16" data-navspacing="8" data-navmarginx="16" data-navmarginy="16" data-navposition="bottom" data-playvideoimage="playvideo-64-64-0.png" data-playvideoimagewidth="64" data-playvideoimageheight="64" data-lightboxthumbwidth="90" data-lightboxthumbheight="60" data-lightboxthumbtopmargin="12" data-lightboxthumbbottommargin="4" data-lightboxbarheight="64" data-lightboxtitlebottomcss="color:#333; font-size:14px; font-family:Armata,sans-serif,Arial; overflow:hidden; text-align:left;" data-lightboxdescriptionbottomcss="color:#333; font-size:12px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left; margin:4px 0px 0px; padding: 0px;" data-textformat="Center text" data-textpositionstatic="bottom" data-textpositiondynamic="centercenter" data-paddingleft="0" data-paddingright="0" data-paddingtop="0" data-paddingbottom="0" data-texteffectresponsivesize="640" data-fadeduration="1000" data-crossfadeduration="1000" data-slideduration="1000" data-elasticduration="1000" data-sliceduration="1500" data-blindsduration="1500" data-blocksduration="1500" data-shuffleduration="1500" data-tilesduration="2000" data-kenburnsduration="5000" data-flipduration="1500" data-flipwithzoomduration="2000" data-threedduration="1500" data-threedhorizontalduration="1500" data-threedwithzoomduration="2500" data-threedhorizontalwithzoomduration="2200" data-threedflipduration="1500" data-threedflipwithzoomduration="2000" data-threedtilesduration="2000" data-threedfallback="flip" data-threedhorizontalfallback="flip" data-threedwithzoomfallback="flipwithzoom" data-threedhorizontalwithzoomfallback="flipwithzoom" data-threedflipfallback="flip" data-threedflipwithzoomfallback="flipwithzoom" data-threedtilesfallback="tiles" data-ratiomediumscreen="800" data-ratiomediumheight="1.2" data-ratiosmallscreen="480" data-ratiosmallheight="1.6" data-textcss="display:block; padding:48px; text-align:center;" data-textbgcss="display:none;" data-titlecss="display:table; position:relative; font-weight:300; font-style:italic; font-size:32px; font-family:Georgia,sans-serif,Arial; color:#fff; padding:10px; margin:0px auto;" data-descriptioncss="display:block; position:relative; font-weight:300; font-style:normal; font-size:20px; line-height:30px; font-family:Georgia,sans-serif,Arial; color:#fff; padding:10px; margin:0px auto;" data-buttoncss="display:block; position:relative; margin:10px auto;" data-titlecssresponsive="font-size:12px;" data-descriptioncssresponsive="display:none !important;" data-buttoncssresponsive="" data-jsfolder="http://iphonerepairmumbai.in/wp-content/plugins/wonderplugin-slider/engine/" style="display:none;"><ul class="amazingslider-slides" style="display:none;"><li><img class="amazingsliderimg" src="wp-content/uploads/2017/11/Phone-repair.jpg" alt="Phone-repair" title="Phone-repair" data-description=""/></li><li><img class="amazingsliderimg" src="wp-content/uploads/2017/11/Iphone-Repair.jpg" alt="" title="" data-description=""/></li><li><img class="amazingsliderimg" src="wp-content/uploads/2017/11/banner1.jpg" alt="banner1" title="banner1" data-description=""/></li></ul><ul class="amazingslider-thumbnails" style="display:none;"><li><img class="amazingsliderthumbnailimg" src="wp-content/uploads/2017/11/Phone-repair-150x150.jpg" alt="Phone-repair" title="Phone-repair" data-description=""/></li><li><img class="amazingsliderthumbnailimg" src="wp-content/uploads/2017/11/Iphone-Repair-150x150.jpg" alt="" title="" data-description=""/></li><li><img class="amazingsliderthumbnailimg" src="wp-content/uploads/2017/11/banner1-150x150.jpg" alt="banner1" title="banner1" data-description=""/></li></ul><div class="wonderplugin-engine"><a href="http://www.wonderplugin.com/wordpress-slider/" title="WordPress Slideshow">WordPress Slideshow</a></div></div></div></div></div></div><nav id="chapternav" class="chapternav" data-analytics-region="family browser">
-<div class="chapternav-wrapper"> <ul class="chapternav-items">  <li class="chapternav-item chapternav-item-iphone-8"> <a class="chapternav-link" href="iphone-5-broken-screen-repair-price-cost-in-mumbai/index.html"> <figure class="chapternav-icon"></figure> <span class="chapternav-label">iPhone 5 Repair</span> </a> </li> <li class="chapternav-item chapternav-item-iphone-8"> <a class="chapternav-link" href="iphone-5s-broken-screen-repair-price-cost-in-mumbai.html"> <figure class="chapternav-icon"></figure> <span class="chapternav-label">iPhone 5s Repair</span> </a> </li> <li class="chapternav-item chapternav-item-iphone-se"> <a class="chapternav-link" href="iphone-6-broken-screen-repair-price-cost-in-mumbai.html"> <figure class="chapternav-icon"></figure> <span class="chapternav-label">iPhone 6 Repair</span> </a> </li> <li class="chapternav-item chapternav-item-ios"> <a class="chapternav-link" href="iphone-6-plus-broken-screen-repair-price-cost-in-mumbai.html"> <figure class="chapternav-icon"></figure> <span class="chapternav-label">iPhone 6 Plus Repair</span> </a> </li> <li class="chapternav-item chapternav-item-accessories"> <a class="chapternav-link" href="iphone-6s-broken-screen-repair-price-cost-in-mumbai.html"> <figure class="chapternav-icon"></figure> <span class="chapternav-label">iPhone 6S Repair</span> </a> </li> <li class="chapternav-item chapternav-item-compare"> <a class="chapternav-link" href="iphone-6s-plus-broken-screen-repair-price-cost-in-mumbai.html"> <figure class="chapternav-icon"></figure> <span class="chapternav-label">iPhone 6S Plus Repair</span> </a> </li> <li class="chapternav-item chapternav-item-iphone-8"> <a class="chapternav-link" href="iphone-7-broken-screen-repair-price-cost-in-mumbai.html"> <figure class="chapternav-icon"></figure> <span class="chapternav-label">iPhone 7 Repair</span> </a> </li> <li class="chapternav-item chapternav-item-iphone-6s"> <a class="chapternav-link" href="iphone-7-plus-broken-screen-repair-price-cost-in-mumbai.html"> <figure class="chapternav-icon"> </figure> <span class="chapternav-label">iPhone 7 Plus Repair</span> </a> </li> <li class="chapternav-item chapternav-item-iphone-8"> <a class="chapternav-link" href="iphone-8-broken-screen-repair-price-cost-in-mumbai.html"> <figure class="chapternav-icon"></figure> <span class="chapternav-label">iPhone 8 Repair</span> </a> </li> <li class="chapternav-item chapternav-item-iphone-6s"> <a class="chapternav-link" href="iphone-8-plus-broken-screen-repair-price-cost-in-mumbai.html"> <figure class="chapternav-icon"> </figure> <span class="chapternav-label">iPhone 8 Plus Repair</span> </a> </li> </ul> <div class="chapternav-paddles"> <button class="chapternav-paddle chapternav-paddle-left" aria-hidden="true" disabled=""></button> <button class="chapternav-paddle chapternav-paddle-right" aria-hidden="true" disabled=""></button></div></div></nav>
-<nav id="chapternav" class="chapternav" data-analytics-region="family browser">
-<div class="chapternav-wrapper"> <ul class="chapternav-items">  <li class="chapternav-item chapternav-item-iphone-8"> <a class="chapternav-link" href="apple-iphone-x-repair.html"> <figure class="chapternav-icon"></figure> <span class="chapternav-label">iPhone X Repair</span> </a> </li> <li class="chapternav-item chapternav-item-iphone-8"> <a class="chapternav-link" href="apple-iphone-xr-repair.html"> <figure class="chapternav-icon"></figure> <span class="chapternav-label">iPhone XR Repair</span> </a> </li> <li class="chapternav-item chapternav-item-iphone-se"> <a class="chapternav-link" href="apple-iphone-xs-repair.html"> <figure class="chapternav-icon"></figure> <span class="chapternav-label">iPhone XS Repair</span> </a> </li> <li class="chapternav-item chapternav-item-ios"> <a class="chapternav-link" href="apple-iphone-xs-max-repair.html"> <figure class="chapternav-icon"></figure> <span class="chapternav-label">iPhone XS Max Repair</span> </a> </li> </ul> <div class="chapternav-paddles"> <button class="chapternav-paddle chapternav-paddle-left" aria-hidden="true" disabled=""></button> <button class="chapternav-paddle chapternav-paddle-right" aria-hidden="true" disabled=""></button></div></div></nav>
-<div data-vc-full-width="true" data-vc-full-width-init="false" data-animation-delay="350" class="vc_row wpb_row vc_row-fluid wd-services vc_custom_1457185956815 animation-parent" style="color: ;}"> <div class="wd-section-title text-center"> <div class="container"> <h1>iPhone Repair Mumbai - iPhone Repair Shop</h1> <p><strong>iPhone Repair Mumbai</strong> offers trustworthy iPhone repair for all iPhone models get your iPhone repaired same-day with free pick and drop services at our <em>iPhone Repair Shop</em>. Quick iPhone repairs like Broken Screen, Liquid Damage, Charging Repair Issue, Liquid Damage, Faulty Headphone Jack and many more... can be repair same day right away without time. Our aim is to have expertly repaired your iPhone and returned to you as quickly as. From the broken screen to complete liquid damage, our technicians at iPhone Repair Mumbai are extremely trained and have the experience to repair all iPhone models from iPhone 4 to 8 plus and satisfy all your iPhone repair needs!</p> <br> <p>If you live in the Mumbai and want a fast repair service without leaving your device we welcome walk-ins, and we can complete repair the same day. If you can't visit our store you can still take benefit of our expert repair skills for your iPhone using Free Pick up & Drop Service of iPhone Repair Mumbai. We can have your iPhone repaired and return it on same day.</p> <br> <p><b>We repair <a href="iphone-4s-broken-screen-repair-price-cost-in-mumbai.html">iPhone 4</a>, <a href="iphone-4s-broken-screen-repair-price-cost-in-mumbai.html">iPhone 4s</a>, <a href="iphone-5-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 5</a>, <a href="iphone-5s-broken-screen-repair-price-cost-in-mumbai.html">iPhone 5s</a>, <a href="iphone-5c-broken-screen-repair-price-cost-in-mumbai.html">iPhone 5c</a>, <a href="iphone-6-broken-screen-repair-price-cost-in-mumbai.html">iPhone 6</a>, <a href="iphone-6s-broken-screen-repair-price-cost-in-mumbai.html">iPhone 6s</a>, <a href="iphone-6-plus-broken-screen-repair-price-cost-in-mumbai.html">iPhone 6 plus</a>, <a href="iphone-6s-plus-broken-screen-repair-price-cost-in-mumbai.html">iPhone 6s plus</a>, <a href="iphone-7-broken-screen-repair-price-cost-in-mumbai.html">iPhone 7</a>, <a href="iphone-7-plus-broken-screen-repair-price-cost-in-mumbai.html">iPhone 7 plus</a>, <a href="iphone-8-broken-screen-repair-price-cost-in-mumbai.html">iPhone 8</a>, <a href="iphone-8-plus-broken-screen-repair-price-cost-in-mumbai.html">iPhone 8 plus</a>, <a href="iphone-x-repair/index.html">iPhone X</a>, <a href="iphone-xr-repair/index.html">iPhone XR</a>, <a href="iphone-xs-repair/index.html">iPhone XS</a>, <a href="iphone-xs-max-repair/index.html">iPhone XS Max</a>.</b></p> <br> <h2>Our Services</h2></div></div><br>
-<div class="container"> <div class="col-md-12 col-sm-12 col-xs-12 nopadding service"> <div class="section-content fw-col-sm-12 fw-col-md-12"> <div class="row small-up-1 medium-up-2 large-up-4 block-service" data-equalizer="6oh6ej-equalizer" data-equalize-by-row="true" data-resize="9hl13y-eq" data-mutate="xdm0aw-eq" data-events="mutate">  <div class="column fw-col-sm-6 fw-col-md-3 m-b-30"> <div class="block-service_item" data-equalizer-watch="" style="height: 250px;"> <div class="block-service_item-icon"><i class="fa fa-tablet" aria-hidden="true"></i></div><div class="block-service_item-title"> <h4>Screen Replacement</h4></div><div class="block-service_item-bgicon"></div></div></div><div class="column fw-col-sm-6 fw-col-md-3 m-b-30"> <div class="block-service_item" data-equalizer-watch="" style="height: 250px;"> <div class="block-service_item-icon"><i class="fa fa-battery-full" aria-hidden="true"></i></div><div class="block-service_item-title"> <h4>Battery Replacement</h4></div><div class="block-service_item-bgicon"></div></div></div><div class="column fw-col-sm-6 fw-col-md-3 m-b-30"> <div class="block-service_item" data-equalizer-watch="" style="height: 250px;"> <div class="block-service_item-icon"><i class="fa fa-mobile" aria-hidden="true"></i></div><div class="block-service_item-title"> <h4>Home Button Repair</h4></div><div class="block-service_item-bgicon"></div></div></div><div class="column fw-col-sm-6 fw-col-md-3 m-b-30"> <div class="block-service_item active" data-equalizer-watch="" style="height: 250px;"> <div class="block-service_item-icon"><i class="fa fa-bolt" aria-hidden="true"></i></div><div class="block-service_item-title"> <h4>Charging Issue Repair</h4></div><div class="block-service_item-bgicon"></div></div></div><div class="column fw-col-sm-6 fw-col-md-3 m-b-30"> <div class="block-service_item active" data-equalizer-watch="" style="height: 250px;"> <div class="block-service_item-icon"><i class="fa fa-camera-retro" aria-hidden="true"></i></div><div class="block-service_item-title"> <h4>Camera Replacement</h4></div><div class="block-service_item-bgicon"></div></div></div><div class="column fw-col-sm-6 fw-col-md-3 m-b-30"> <div class="block-service_item" data-equalizer-watch="" style="height: 250px;"> <div class="block-service_item-icon"><img src="wp-content/uploads/2017/11/54252-200.png"></div><div class="block-service_item-title"> <h4>Vibrator Replacement</h4></div><div class="block-service_item-bgicon"></div></div></div><div class="column fw-col-sm-6 fw-col-md-3 m-b-30"> <div class="block-service_item" data-equalizer-watch="" style="height: 250px;"> <div class="block-service_item-icon"><i class="fa fa-tint" aria-hidden="true"></i></div><div class="block-service_item-title"> <h4>Liquid Damage</h4></div><div class="block-service_item-bgicon"></div></div></div><div class="column fw-col-sm-6 fw-col-md-3 m-b-30"> <div class="block-service_item" data-equalizer-watch="" style="height: 250px;"> <div class="block-service_item-icon"><i class="fa fa-power-off" aria-hidden="true"></i></div><div class="block-service_item-title"> <h4>Power Button Repair</h4></div><div class="block-service_item-bgicon"></div></div></div><div class="column fw-col-sm-6 fw-col-md-3 m-b-30"> <div class="block-service_item" data-equalizer-watch="" style="height: 250px;"> <div class="block-service_item-icon"><i class="fa fa-bullhorn" aria-hidden="true"></i></div><div class="block-service_item-title"> <h4>Speaker Replacement</h4></div><div class="block-service_item-bgicon"></div></div></div><div class="column fw-col-sm-6 fw-col-md-3 m-b-30"> <div class="block-service_item" data-equalizer-watch="" style="height: 250px;"> <div class="block-service_item-icon"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></div><div class="block-service_item-title"> <h4>Ringer Replacemnet</h4></div><div class="block-service_item-bgicon"></div></div></div><div class="column fw-col-sm-6 fw-col-md-3 m-b-30"> <div class="block-service_item" data-equalizer-watch="" style="height: 250px;"> <div class="block-service_item-icon"><img src="wp-content/uploads/2017/11/381031-200.png"></div><div class="block-service_item-title"> <h4>Sensor Replacemnet</h4></div><div class="block-service_item-bgicon"></div></div></div><div class="column fw-col-sm-6 fw-col-md-3 m-b-30"> <div class="block-service_item active" data-equalizer-watch="" style="height: 250px;"> <div class="block-service_item-icon"><i class="fa fa-volume-up" aria-hidden="true"></i></div><div class="block-service_item-title"> <h4>Volume Button Repair</h4></div><div class="block-service_item-bgicon"></div></div></div></div></div></div></div></div><div class="vc_row-full-width"></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid wd-estimate vc_custom_1457027399988" style="color: ;}" data-equalizer> <div class="container"> <div class="wpb_column vc_column_container vc_col-sm-6 vc_custom_1454878802037" data-equalizer-watch=""> <div class="wpb_wrapper"> <div class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_left-to-right"> <div class="wpb_wrapper"> <div class="wd-presentation"> <h4>We are</h4> <h2>Affordable iPhone Mobile, Tablet Repair Shop</h2> <p>iPhone repair in Mumbai comes up with a high end iPhone repair services by our expert and certified iPhone repair specialist with 180 days of guarantee. We believe in providing good services to our customers at their doorstep at very low cost.</p> <div class="readmore">Schedule your FREE estimate today!</div><br>
-<a href="contact/index.html" class="button btn_small btn_theme_color btn_rounded btn_normal_style icon_pos_after btn_icon_anim_out" target="_self"><span>Contact Now</span> <i class="fa fa-angle-double-right"></i> </a></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6" data-equalizer-watch="" style="height: 446px;"> <div class="wpb_wrapper"> <div class="wpb_raw_code wpb_content_element wpb_raw_html"> <div class="wpb_wrapper"> <div class="twentytwenty-wrapper twentytwenty-vertical"> <div id="repaired-iphone" class="twentytwenty-container" style="height: 472px;"> <img src="wp-content/uploads/2017/11/YeeSite-Aluminum-Mobile-Phone-Tablet-Holder-for-iPhone-7-Smartphone-Universal-Metal-Desktop-Stand-for-Samsung.jpg" alt="iPhone Repair Mumbai and iPhone Repair Shop" class="twentytwenty-before" title="iPhone Repair Mumbai"></div></div></div></div></div></div></div></div><div class="vc_row-full-width"></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-animation-delay="350" class="vc_row wpb_row vc_row-fluid our-numbers animation-parent vc_custom_1445353447744 animation-parent" style="color: ;}"> <div class="container"> <div class="wpb_column vc_column_container vc_col-sm-6" data-equalizer-watch> <div class="wpb_wrapper"> <div class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_left-to-right"> <div class="wpb_wrapper"> <h2 class="boc_heading no_text_transform letter_spacing_negative " style="margin-bottom: 5px;margin-top: 0px;color: #333333;font-size: 36px;"><span><strong>iPhone </strong> Repair Shop covers whole Mumbai</span></h2> <h3 class="boc_heading boc_subheading " style="margin-bottom: 20px;margin-top: 0px;color: #adadad;"><span>Affordable iPhone repair solutions at your doorstep</span></h3> <div class="boc_divider_holder"><div class="boc_divider" style="margin-top: 20px;margin-bottom: 20px;width: 100px;height: 2px;background: #eeeeee;"></div></div><div class="wpb_text_column wpb_content_element"> <div class="wpb_wrapper"> <p>Do you need a repair for other issues such as the Home button, liquid damage, or an accessory?</p></div></div>&nbsp;
-<br>
-<a href="contact/index.html" class="button btn_small btn_theme_color btn_rounded btn_normal_style icon_pos_after btn_icon_anim_out" target="_self"><span>Contact Now</span> <i class="fa fa-angle-double-right"></i> </a></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6 iphn" data-equalizer-watch> <div class="wpb_wrapper"> <div class="wpb_text_column wpb_content_element"> <div class="wpb_wrapper"> <div class="rounded-item animated" data-animated="fadeInRight"> <div class="rounded-text">Our team</div><div class="rounded-number"> <h3>11</h3></div></div><div class="rounded-item animated" data-animated="fadeInRight"> <div class="rounded-text">Our Operations</div><div class="rounded-number"> <h3>616K</h3></div></div><div class="rounded-item animated" data-animated="fadeInRight"> <div class="rounded-text">Our customers</div><div class="rounded-number"> <h3>1000+</h3></div></div></div></div></div></div></div></div><div class="vc_row-full-width"></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid text-center vc_custom_1457025556613" style="color: #ffffff;}"> <div class="wpb_column vc_column_container vc_col-sm-12" data-equalizer-watch> <div class="wpb_wrapper"> <div class="wpb_text_column wpb_content_element"> <div class="wpb_wrapper"> <h3 style="font-size: 36px; line-height: 40px; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 2px;">Do you need a iPhone Repair?</h3> <h5 style="font-size: 20px; font-weight: 300;">We are India’s leading online mobile repairing center <br>with best iphone/ipad repair services at genuine price tags. </h5> <p style="margin-top: 40px;"><a href="contact.html" class="button">Get Free Quote</a></p></div></div></div></div></div><div class="vc_row-full-width"></div><div class="vc_row wpb_row vc_row-fluid brochure vc_custom_1488556436414 animation-parent"> <div class="container" data-equalizer-watch> <div class="wpb_wrapper"> <div class="vc_row wpb_row vc_inner vc_row-fluid"> <div class="wpb_column vc_column_container vc_col-sm-4" data-equalizer-watch> <img src="wp-content/uploads/2017/11/phone-blocks-1-1.jpg" style="height:500px;" alt"iPhone Repair Shop in Mumbai" title"iPhone Repair Shop"></div><div class="wpb_column vc_column_container vc_col-sm-8" data-equalizer-watch> <div class="wpb_wrapper"> <div class="boxes small layout-1 animated clearfix" data-animated=fadeInLeft> <div class="box-container clearfix"> <div class="box-icon"> <i class="fa fa-mobile"></i></div><h3 class="box-title-1">We Fix It All</h3>
-<p class="box-body">While screen repair is our specialty, but we’re also pros at LCD replacements, charge port repair and other part replacements. Every iPhone Repair completed at iPhone Repair Mumbai comes with our standard 90-day warranty that protects your repair in case something unexpected happens. We know that your device was already an investment so our low price guarantee helps us keep our prices as low as possible. If you can find a lower advertised price for the same repair, we would be happy to match that price and beat it.</p></div></div><div class="boxes small layout-1 animated clearfix" data-animated=fadeInRight> <div class="box-container clearfix"> <div class="box-icon"> <i class="fa fa-mobile"></i></div><h3 class="box-title-1">Low Price Gurantee</h3>
-<p class="box-body">Getting your device repaired shouldn’t break the bank. Our low price guarantee ensures that we always offer the best price to our customers. Just bring in any local competitor’s published price for the same repair, and we will happily match and beat their price. Note, the repair price must be a regularly published price, and the offer does not apply to specials, coupons or other discounts.</p></div></div><div class="boxes small layout-1 animated clearfix" data-animated=fadeInLeft> <div class="box-container clearfix"> <div class="box-icon"> <i class="fa fa-mobile"></i></div><h3 class="box-title-1">Quick & Convinent Repair Process</h3>
-<p class="box-body">From friendly and informative technicians, to online repair tracking, we make repair easy. We know how important your device is to you, so we promise to return it to you as quickly as possible, and keep you informed every step of the way. Most of our popular repairs can even be performed while you wait!</p></div></div><div class="boxes small layout-1 animated clearfix" data-animated=fadeInLeft> <div class="box-container clearfix"> <div class="box-icon"> <i class="fa fa-mobile"></i></div><h3 class="box-title-1">90-Day Warranty</h3>
-<p class="box-body">In the rare event that you experience an issue with your repaired device, iPhone Repair Mumbai back all our repairs with a 90-day, hassle free warranty. Note, we are not responsible for lost of any data!</p></div></div><div class="boxes small layout-1 animated clearfix" data-animated=fadeInLeft> <div class="box-container clearfix"> <div class="box-icon"> <i class="fa fa-mobile"></i></div><h3 class="box-title-1">Free Diagnostic</h3>
-<p class="box-body">iPhone Repair Mumbai believe in a transparent repair process, and that starts with clear and upfront pricing. If you’re not sure what’s wrong with your device, we would be happy to diagnose it for free. 
-Once we determine what is needed for your repair, we will contact you with an obligation free repair quote. You can elect to continue with a repair, or not, the choice is always yours.</p></div></div></div></div></div><div class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_bottom-to-top"> <div class="wpb_wrapper"> <p><a class="button large radius m-t-50" href="contact/index.html"><i class="fa fa-arrow-circle-o-down"></i> Get a Quote</a></p></div></div></div></div></div><div class="vc_row-full-width"></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1443281548968 animation-parent"> <div class="wpb_column vc_column_container vc_col-sm-12" data-equalizer-watch> <div class="wpb_wrapper"> <div class="vc_row wpb_row vc_inner vc_row-fluid careers"> <div class="job-list wpb_column vc_column_container vc_col-sm-5 vc_custom_1443281548968" data-equalizer-watch> <div class="wpb_wrapper"> <div class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_right-to-left vc_custom_1445449029675"> <div class="wpb_wrapper"> <div class="wd-section-title text-center let"> <div class="subtitle">Let We</div><h2>Know</h2></div></div></div><div class="row"> <div class="small-12 columns small-centered"> <div role="form" class="wpcf7" id="wpcf7-f631-o1" lang="en-US" dir="ltr"> <div class="screen-reader-response"></div><form action="http://iphonerepairmumbai.in/#wpcf7-f631-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-<div style="display: none;"> <input type="hidden" name="_wpcf7" value="631" /> <input type="hidden" name="_wpcf7_version" value="5.1.6" /> <input type="hidden" name="_wpcf7_locale" value="en_US" /> <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f631-o1" /> <input type="hidden" name="_wpcf7_container_post" value="0" /></div><div class="col-md-6"><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Name" /></span></div><div class="col-md-6"><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your Email" /></span></div><div class="col-md-6"><span class="wpcf7-form-control-wrap tel"><input type="text" name="tel" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Your Phone" /></span></div><div class="col-md-6"><span class="wpcf7-form-control-wrap captcha-1"><input type="text" name="captcha-1" value="" size="40" class="wpcf7-form-control wpcf7-captchar career_contact" autocomplete="off" aria-invalid="false" placeholder="Type Code" /></span><input type="hidden" name="_wpcf7_captcha_challenge_captcha-1" value="210946047" /><img class="wpcf7-form-control wpcf7-captchac wpcf7-captcha-captcha-1 input-xlarge-res" width="72" height="24" alt="captcha" src="wp-content/uploads/wpcf7_captcha/210946047.html"/></div><div class="col-md-12">
-<span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="4" rows="2" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Your Message"></textarea></span></div><div class="col-md-12 text-left"><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit" /></div><div class="wpcf7-response-output wpcf7-display-none"></div></form></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-7 vc_custom_1488556501833" data-equalizer-watch> <div class="wpb_wrapper"> <div class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_left-to-right careers-left"> <div class="wpb_wrapper"> <div class="large-6"> <h4>Phones Repair Shop offers a wealth of career opportunities.</h4></div></div></div></div></div></div></div></div></div><div class="vc_row-full-width"></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" data-animation-delay="350" class="vc_row wpb_row vc_row-fluid our-packages vc_custom_1456923484322 animation-parent" style="color: ;}"> <div class="wpb_column vc_column_container vc_col-sm-12" data-equalizer-watch> <div class="wpb_wrapper"> <div class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_right-to-left vc_custom_1454879447321"> <div class="wpb_wrapper"> <div class="wd-section-title text-center"> <h2>Our Gallery</h2></div></div></div><div class="wd-portfolio-container"> <div class="wondercarousellightbox_options" data-skinsfoldername="" data-jsfolder="http://iphonerepairmumbai.in/wp-content/plugins/wonderplugin-carousel/engine/" style="display:none;"></div><style>@import url(https://fonts.googleapis.com/css?family=Open+Sans);  #wonderplugincarousel-3 .amazingcarousel-image{position:relative;padding:0px;}
-#wonderplugincarousel-3 .amazingcarousel-image img{display:block;width:100%;max-width:100%;border:0;margin:0;padding:0;}
-#wonderplugincarousel-3 .amazingcarousel-hover{position:absolute;display:none;top:0;left:0;width:100%;height:100%;margin:0;padding:8px;box-sizing:border-box;background-color:rgba(0, 0, 0, 0.7);cursor:pointer;}
-#wonderplugincarousel-3 .amazingcarousel-title{position:relative;font:16px "Open Sans", sans-serif;color:#fff;margin-top:36px;text-align:center;}
-#wonderplugincarousel-3 .amazingcarousel-description{position:relative;font:12px "Open Sans", sans-serif;color:#fff;margin-top:6px;text-align:center;}
-#wonderplugincarousel-3 .amazingcarousel-list-container{padding:16px 0;}
-#wonderplugincarousel-3 .amazingcarousel-item-container{text-align:center;padding:0px;}
-#wonderplugincarousel-3 .amazingcarousel-prev{left:0%;top:45%;margin-left:-48px;margin-top:-16px;}
-#wonderplugincarousel-3 .amazingcarousel-next{right:0%;top:45%;margin-right:-48px;margin-top:-16px;}
-#wonderplugincarousel-3 .amazingcarousel-nav{position:absolute;width:100%;top:100%;}
-#wonderplugincarousel-3 .amazingcarousel-bullet-wrapper{margin:12px auto;}
-.amazingcarousel-socialmedia-button{display:inline-block;margin:4px;}
-.amazingcarousel-socialmedia-button a{box-shadow:none;}
-.amazingcarousel-socialmedia-icon{display:table-cell;width:32px;height:32px;font-size:18px;border-radius:50%;color:#fff;vertical-align:middle;text-align:center;cursor:pointer;padding:0;}
-.amazingcarousel-socialmedia-rotate{transition:transform .4s ease-in;}
-.amazingcarousel-socialmedia-rotate:hover{transform:rotate(360deg);}</style><div class="wonderplugincarousel-container" id="wonderplugincarousel-container-3"><div class="wonderplugincarousel" id="wonderplugincarousel-3" data-carouselid="3" data-width="273" data-height="231" data-skin="hoverover" data-showimgtitle="false" data-sameheight="false" data-sameheightresponsive="false" data-fullwidth="false" data-centerimage="true" data-fitimage="false" data-fitcenterimage="false" data-fixaspectratio="true" data-autoplay="true" data-random="false" data-circular="true" data-pauseonmouseover="true" data-continuous="false" data-responsive="true" data-showhoveroverlay="false" data-showhoveroverlayalways="false" data-hidehoveroverlayontouch="false" data-lightboxresponsive="true" data-lightboxshownavigation="false" data-lightboxnogroup="false" data-lightboxshowtitle="true" data-lightboxshowdescription="false" data-lightboxaddsocialmedia="false" data-usescreenquery="false" data-donotinit="false" data-addinitscript="false" data-doshortcodeontext="false" data-lightboxshowsocial="false" data-lightboxshowfacebook="true" data-lightboxshowtwitter="true" data-lightboxshowpinterest="true" data-lightboxsocialrotateeffect="true" data-donotcircularforless="false" data-hidecontainerbeforeloaded="false" data-hidecontaineroninit="true" data-lightboximagekeepratio="true" data-showplayvideo="true" data-triggerresize="false" data-lightboxfullscreenmode="false" data-lightboxcloseonoverlay="true" data-lightboxvideohidecontrols="false" data-lightboxautoslide="false" data-lightboxshowtimer="true" data-lightboxshowplaybutton="true" data-lightboxalwaysshownavarrows="false" data-lightboxshowtitleprefix="true" data-spacing="0" data-rownumber="1" data-visibleitems="6" data-arrowstyle="always" data-arrowimage="" data-arrowwidth="32" data-arrowheight="32" data-navstyle="bullets" data-navimage="" data-navwidth="16" data-navheight="16" data-navspacing="8" data-hoveroverlayimage="" data-lightboxthumbwidth="90" data-lightboxthumbheight="60" data-lightboxthumbtopmargin="12" data-lightboxthumbbottommargin="4" data-lightboxbarheight="64" data-lightboxtitlebottomcss="{color:#333; font-size:14px; font-family:Armata,sans-serif,Arial; overflow:hidden; text-align:left;}" data-lightboxdescriptionbottomcss="{color:#333; font-size:12px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left; margin:4px 0px 0px; padding: 0px;}" data-continuousduration="2500" data-autoplaydir="left" data-scrollmode="page" data-interval="3000" data-transitionduration="1000" data-lightboxtitlestyle="bottom" data-lightboximagepercentage="75" data-lightboxdefaultvideovolume="1" data-lightboxoverlaybgcolor="#000" data-lightboxoverlayopacity="0.9" data-lightboxbgcolor="#fff" data-lightboxtitleprefix="%NUM / %TOTAL" data-lightboxtitleinsidecss="color:#fff; font-size:16px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left;" data-lightboxdescriptioninsidecss="color:#fff; font-size:12px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left; margin:4px 0px 0px; padding: 0px;" data-playvideoimage="playvideo-64-64-0.png" data-playvideoimagepos="center" data-imgtitle="title" data-circularlimit="3" data-lightboxsocialposition="position:absolute;top:100%;right:0;" data-lightboxsocialpositionsmallscreen="position:absolute;top:100%;right:0;left:0;" data-lightboxsocialdirection="horizontal" data-lightboxsocialbuttonsize="32" data-lightboxsocialbuttonfontsize="18" data-sameheightmediumscreen="769" data-sameheightmediumheight="200" data-sameheightsmallscreen="415" data-sameheightsmallheight="150" data-triggerresizedelay="100" data-lightboxslideinterval="5000" data-lightboxtimerposition="bottom" data-lightboxtimercolor="#dc572e" data-lightboxtimeropacity="1" data-lightboxbordersize="8" data-lightboxborderradius="0" data-screenquery='{"tablet":{"screenwidth":800,"visibleitems":2},"mobile":{"screenwidth":480,"visibleitems":1}}' data-jsfolder="http://iphonerepairmumbai.in/wp-content/plugins/wonderplugin-carousel/engine/" style="display:none;position:relative;margin:0 auto;width:100%;max-width:1638px;"><div class="amazingcarousel-list-container" style="overflow:hidden;"><ul class="amazingcarousel-list"><li class="amazingcarousel-item"><div class="amazingcarousel-item-container"><div class="amazingcarousel-image"><a href="wp-content/uploads/2017/11/1-946x802.jpg" data-thumbnail="http://iphonerepairmumbai.in/wp-content/uploads/2017/11/1-946x802-300x254.jpg" class="wondercarousellightbox wondercarousellightbox-3" data-group="wondercarousellightbox-3"><img src="wp-content/uploads/2017/11/1-946x802.jpg" alt="" data-description=""/></a></div><div class="amazingcarousel-hover"> <div class="amazingcarousel-title"></div><div class="amazingcarousel-description"></div></div></div></li><li class="amazingcarousel-item"><div class="amazingcarousel-item-container"><div class="amazingcarousel-image"><a href="wp-content/uploads/2017/11/stock-photo-close-up-of-man-repairing-cellphone-with-multimeter-244875616-946x802.jpg" data-thumbnail="http://iphonerepairmumbai.in/wp-content/uploads/2017/11/stock-photo-close-up-of-man-repairing-cellphone-with-multimeter-244875616-946x802-300x254.jpg" class="wondercarousellightbox wondercarousellightbox-3" data-group="wondercarousellightbox-3"><img src="wp-content/uploads/2017/11/stock-photo-close-up-of-man-repairing-cellphone-with-multimeter-244875616-946x802.jpg" alt="" data-description=""/></a></div><div class="amazingcarousel-hover"> <div class="amazingcarousel-title"></div><div class="amazingcarousel-description"></div></div></div></li><li class="amazingcarousel-item"><div class="amazingcarousel-item-container"><div class="amazingcarousel-image"><a href="wp-content/uploads/2017/11/5-946x802.jpg" data-thumbnail="http://iphonerepairmumbai.in/wp-content/uploads/2017/11/5-946x802-300x254.jpg" class="wondercarousellightbox wondercarousellightbox-3" data-group="wondercarousellightbox-3"><img src="wp-content/uploads/2017/11/5-946x802.jpg" alt="" data-description=""/></a></div><div class="amazingcarousel-hover"> <div class="amazingcarousel-title"></div><div class="amazingcarousel-description"></div></div></div></li><li class="amazingcarousel-item"><div class="amazingcarousel-item-container"><div class="amazingcarousel-image"><a href="wp-content/uploads/2017/11/4-946x802.jpg" data-thumbnail="http://iphonerepairmumbai.in/wp-content/uploads/2017/11/4-946x802-300x254.jpg" class="wondercarousellightbox wondercarousellightbox-3" data-group="wondercarousellightbox-3"><img src="wp-content/uploads/2017/11/4-946x802.jpg" alt="" data-description=""/></a></div><div class="amazingcarousel-hover"> <div class="amazingcarousel-title"></div><div class="amazingcarousel-description"></div></div></div></li><li class="amazingcarousel-item"><div class="amazingcarousel-item-container"><div class="amazingcarousel-image"><a href="wp-content/uploads/2017/11/2-946x802.jpg" data-thumbnail="http://iphonerepairmumbai.in/wp-content/uploads/2017/11/2-946x802-300x254.jpg" class="wondercarousellightbox wondercarousellightbox-3" data-group="wondercarousellightbox-3"><img src="wp-content/uploads/2017/11/2-946x802.jpg" alt="" data-description=""/></a></div><div class="amazingcarousel-hover"> <div class="amazingcarousel-title"></div><div class="amazingcarousel-description"></div></div></div></li></ul><div class="amazingcarousel-prev"></div><div class="amazingcarousel-next"></div></div><div class="amazingcarousel-nav"></div><div class="wonderplugin-engine"><a href="http://www.wonderplugin.com/wordpress-carousel/" title="Responsive WordPress Image Scroller Plugin">Responsive WordPress Image Scroller Plugin</a></div></div></div></div></div></div></div><a href="contact/index.html">
-<div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid text-center vc_custom_1457025556613 pickup" style="color: #ffffff;}"> <div class="wpb_column vc_column_container vc_col-sm-12" data-equalizer-watch=""> <div class="wpb_wrapper"> <div class="wpb_text_column wpb_content_element"> <div class="wpb_wrapper"> <h3 style="font-size: 36px; line-height: 40px; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 2px;">&nbsp; &nbsp;<br><br></h3></div></div></div></div></div></a>
-<div class="vc_row-full-width"></div></div></article></div></main>
-<style>.whatsapp{position:fixed;bottom:2px;left:0;}</style>
-<section class="l-footer-columns">
-<h3 class="hide">Footer</h3>
-<div data-animation-delay="350"> <div class="container"> <div class="row"> <div class="col-md-12 col-sm-12 col-xs-12 nopadding"> <div class="col-md-4 col-sm-6 col-xs-12"> <div class="footer_block"> <h1> <i class="fa fa-mobile" aria-hidden="true"></i> iPhone Repair</h1> <div id="text-5" class="widget widget_text"> <div class="textwidget"><p>We are India’s leading online mobile repairing center with best iPhone/iPad repair services at genuine price tags. The company promises top-notch quality repair services for all faults at which is way better &amp; assuring than going to your local cell phone repair shops.</p></div></div></div></div><div class="col-md-3 col-sm-6 col-xs-12"> <div class="footer_block"> <h4>Models We Repair</h4> <ul class="footer-links"> <div id="nav_menu-7" class="widget widget_nav_menu"><div class="menu-models-we-repair-container"><ul id="menu-models-we-repair" class="menu"><li id="menu-item-623" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-623"><a href="iphone-4s-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 4S Repair</a></li> <li id="menu-item-613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-613"><a href="iphone-5-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 5 Repair</a></li> <li id="menu-item-614" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-614"><a href="iphone-5c-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 5C Repair</a></li> <li id="menu-item-615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-615"><a href="iphone-5s-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 5S Repair</a></li> <li id="menu-item-617" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-617"><a href="iphone-6-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 6 Repair</a></li> <li id="menu-item-616" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-616"><a href="iphone-6-plus-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 6 Plus Repair</a></li> <li id="menu-item-619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-619"><a href="iphone-6s-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 6S Repair</a></li> <li id="menu-item-618" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-618"><a href="iphone-6s-plus-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 6S Plus Repair</a></li> <li id="menu-item-714" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-714"><a href="iphone-7-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 7 Repair</a></li> <li id="menu-item-713" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-713"><a href="iphone-7-plus-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 7 Plus Repair</a></li> <li id="menu-item-712" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-712"><a href="iphone-8-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 8 Repair</a></li> </ul></div></div></ul></div></div><div class="col-md-2 col-sm-6 col-xs-12"> <div class="footer_block"> <h4>Sitelinks</h4> <ul class="footer-links"> <div id="nav_menu-2" class="widget widget_nav_menu"><div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-233" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-233"><a href="index.html">Home</a></li> <li id="menu-item-418" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-418"><a href="about/index.html">About</a></li> <li id="menu-item-594" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-594"><a href="index.html">Repair Models</a> <ul class="sub-menu"> <li id="menu-item-624" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-624"><a href="iphone-4s-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 4S Repair</a></li> <li id="menu-item-595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-595"><a href="iphone-5-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 5 Repair</a></li> <li id="menu-item-596" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-596"><a href="iphone-5c-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 5C Repair</a></li> <li id="menu-item-597" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-597"><a href="iphone-5s-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 5S Repair</a></li> <li id="menu-item-599" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-599"><a href="iphone-6-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 6 Repair</a></li> <li id="menu-item-598" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-598"><a href="iphone-6-plus-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 6 Plus Repair</a></li> <li id="menu-item-601" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-601"><a href="iphone-6s-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 6S Repair</a></li> <li id="menu-item-600" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-600"><a href="iphone-6s-plus-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 6S Plus Repair</a></li> <li id="menu-item-711" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-711"><a href="iphone-7-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 7 Repair</a></li> <li id="menu-item-710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-710"><a href="iphone-7-plus-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 7 Plus Repair</a></li> <li id="menu-item-709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-709"><a href="iphone-8-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 8 Repair</a></li> <li id="menu-item-743" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-743"><a href="iphone-8-plus-broken-screen-repair-price-cost-in-mumbai/index.html">iPhone 8 Plus Repair</a></li> <li id="menu-item-939" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-939"><a href="apple-iphone-x-repair/index.html">iPhone X Repair</a></li> <li id="menu-item-945" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-945"><a href="apple-iphone-xr-repair/index.html">iPhone XR Repair</a></li> <li id="menu-item-938" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-938"><a href="apple-iphone-xs-repair/index.html">iPhone XS Repair</a></li> <li id="menu-item-946" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-946"><a href="apple-iphone-xs-max-repair/index.html">iPhone XS Max Repair</a></li> </ul> </li> <li id="menu-item-412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-412"><a href="contact/index.html">Contact</a></li> </ul></div></div></ul></div></div><div class="col-md-3 col-sm-6 col-xs-12"> <div class="footer_block"> <h4>Contact Detail</h4> <ul class="personal-info"> <div id="text-2" class="widget widget_text"> <div class="textwidget"><li><i class="fa fa-map-marker"></i> 183, Air India Road Opp.Kapoor Sports, Kalina, Santacruz East, Mumbai, Maharashtra 400029</li> <li><i class="fa fa-envelope"></i> info@iphonerepairmumbai.in</li> <li><i class="fa fa-phone"></i>+91 7303 107 107 </li> <li><i class="fa fa-phone"></i> +91 7301 107 107</li> <li><i class="fa fa-clock-o"></i> Mon - Sun, 10:00 AM - 9:00 PM</li></div></div></ul></div></div></div></div></div></div><footer class="l-footer">
-<div class="copyright large-12 text-center"> <div class="col-md-6 col-sm-12 col-xs-12 text-center" style="background: #0f1117;"> <p> © 2018 Phone Repair All rights reserved. &nbsp; Designed By <a href="http://www.makent.in/">Mak</a> </p></div><div class="col-md-6 col-sm-12 col-xs-12" style="background: #0f1117;"> <p> <a href="#">Terms &amp; Condition</a> &nbsp; | &nbsp; <a href="#">Privacy Policy</a> </p></div></div></footer>
-<div class="whatsapp"> <a href="https://api.whatsapp.com/send?phone=917303107107&amp;text=Hi,%20I%20am%20contacting%20you%20through%20your%20Iphone%20Repair%20Mumbai%20website." target="_blank"><img src="wp-content/uploads/2018/12/whatsapp-icon-png-17.png" alt="whatsapp"></a></div></section></div></div><a href="tel:7303 107 107" id="callnowbutton"><span class="NoButtonText">Call Now Button</span></a><button id="responsive-menu-button"
-class="responsive-menu-button responsive-menu-boring
-responsive-menu-accessible"
-type="button"
-aria-label="Menu">
-<span class="responsive-menu-box">
-<span class="responsive-menu-inner"></span>
-</span>
-</button><div id="responsive-menu-container" class="slide-left"> <div id="responsive-menu-wrapper"> <ul id="responsive-menu"><li id="responsive-menu-item-233" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home responsive-menu-item responsive-menu-current-item"><a href="index.html" class="responsive-menu-item-link">Home</a></li><li id="responsive-menu-item-418" class="menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a href="about/index.html" class="responsive-menu-item-link">About</a></li><li id="responsive-menu-item-594" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children responsive-menu-item responsive-menu-current-item responsive-menu-item-has-children"><a href="index.html" class="responsive-menu-item-link">Repair Models<div class="responsive-menu-subarrow">▼</div></a><ul class='responsive-menu-submenu responsive-menu-submenu-depth-1'><li id="responsive-menu-item-624" class="menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a href="iphone-4s-broken-screen-repair-price-cost-in-mumbai/index.html" class="responsive-menu-item-link">iPhone 4S Repair</a></li><li id="responsive-menu-item-595" class="menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a href="iphone-5-broken-screen-repair-price-cost-in-mumbai/index.html" class="responsive-menu-item-link">iPhone 5 Repair</a></li><li id="responsive-menu-item-596" class="menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a href="iphone-5c-broken-screen-repair-price-cost-in-mumbai/index.html" class="responsive-menu-item-link">iPhone 5C Repair</a></li><li id="responsive-menu-item-597" class="menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a href="iphone-5s-broken-screen-repair-price-cost-in-mumbai/index.html" class="responsive-menu-item-link">iPhone 5S Repair</a></li><li id="responsive-menu-item-599" class="menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a href="iphone-6-broken-screen-repair-price-cost-in-mumbai/index.html" class="responsive-menu-item-link">iPhone 6 Repair</a></li><li id="responsive-menu-item-598" class="menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a href="iphone-6-plus-broken-screen-repair-price-cost-in-mumbai/index.html" class="responsive-menu-item-link">iPhone 6 Plus Repair</a></li><li id="responsive-menu-item-601" class="menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a href="iphone-6s-broken-screen-repair-price-cost-in-mumbai/index.html" class="responsive-menu-item-link">iPhone 6S Repair</a></li><li id="responsive-menu-item-600" class="menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a href="iphone-6s-plus-broken-screen-repair-price-cost-in-mumbai/index.html" class="responsive-menu-item-link">iPhone 6S Plus Repair</a></li><li id="responsive-menu-item-711" class="menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a href="iphone-7-broken-screen-repair-price-cost-in-mumbai/index.html" class="responsive-menu-item-link">iPhone 7 Repair</a></li><li id="responsive-menu-item-710" class="menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a href="iphone-7-plus-broken-screen-repair-price-cost-in-mumbai/index.html" class="responsive-menu-item-link">iPhone 7 Plus Repair</a></li><li id="responsive-menu-item-709" class="menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a href="iphone-8-broken-screen-repair-price-cost-in-mumbai/index.html" class="responsive-menu-item-link">iPhone 8 Repair</a></li><li id="responsive-menu-item-743" class="menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a href="iphone-8-plus-broken-screen-repair-price-cost-in-mumbai/index.html" class="responsive-menu-item-link">iPhone 8 Plus Repair</a></li><li id="responsive-menu-item-939" class="menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a href="apple-iphone-x-repair/index.html" class="responsive-menu-item-link">iPhone X Repair</a></li><li id="responsive-menu-item-945" class="menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a href="apple-iphone-xr-repair/index.html" class="responsive-menu-item-link">iPhone XR Repair</a></li><li id="responsive-menu-item-938" class="menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a href="apple-iphone-xs-repair/index.html" class="responsive-menu-item-link">iPhone XS Repair</a></li><li id="responsive-menu-item-946" class="menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a href="apple-iphone-xs-max-repair/index.html" class="responsive-menu-item-link">iPhone XS Max Repair</a></li></ul></li><li id="responsive-menu-item-412" class="menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a href="contact/index.html" class="responsive-menu-item-link">Contact</a></li></ul>                                                <div id="responsive-menu-search-box"> <form action="http://iphonerepairmumbai.in/" class="responsive-menu-search-form" role="search"> <input type="search" name="s" title="Search" placeholder="Search" class="responsive-menu-search-box"> </form></div><div id="responsive-menu-additional-content"></div></div></div><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<script>var wpcf7={"apiSettings":{"root":"http:\/\/iphonerepairmumbai.in\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};</script>
-<script>var megamenu={"timeout":"300","interval":"100"};</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117702708-1"></script>
-<script>window.dataLayer=window.dataLayer||[];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'UA-117702708-1');</script>
-<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"http://iphonerepairmumbai.in/#organization","name":"iPhone Repair Mumbai","url":"http://iphonerepairmumbai.in/","sameAs":[]},{"@type":"WebSite","@id":"http://iphonerepairmumbai.in/#website","url":"http://iphonerepairmumbai.in/","name":"Iphone Repair Mumbai","publisher":{"@id":"http://iphonerepairmumbai.in/#organization"},"potentialAction":{"@type":"SearchAction","target":"http://iphonerepairmumbai.in/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"http://iphonerepairmumbai.in/#webpage","url":"http://iphonerepairmumbai.in/","inLanguage":"en-US","name":"iPhone Repair Mumbai - iPhone Repair Shop in Mumbai - Apple iPhone Screen Repair Service","isPartOf":{"@id":"http://iphonerepairmumbai.in/#website"},"about":{"@id":"http://iphonerepairmumbai.in/#organization"},"description":"iPhone Repair Mumbai offers trustworthy repair service for all iPhone models, iPhone screen repair at a reasonable price at our iPhone Repair Shop in Mumbai. iPhone Repair in Mumbai offers doorstep repair service and same-day repair service all over Mumbai. Call us 7303107107 for iPhone broken Screen Replacement & iPhone broken screen repair or visit our Apple iPhone repair shop at Mumbai."}]}</script>
-<script src='wp-content/cache/wpfc-minified/890k45e5/8f5l1.js' type="text/javascript"></script>
-<script>jQuery(document).ready(function($){
-var ResponsiveMenu={
-trigger: '#responsive-menu-button',
-animationSpeed: 500,
-breakpoint: 800,
-pushButton: 'off',
-animationType: 'slide',
-animationSide: 'left',
-pageWrapper: '',
-isOpen: false,
-triggerTypes: 'click',
-activeClass: 'is-active',
-container: '#responsive-menu-container',
-openClass: 'responsive-menu-open',
-accordion: 'off',
-activeArrow: '▲',
-inactiveArrow: '▼',
-wrapper: '#responsive-menu-wrapper',
-closeOnBodyClick: 'off',
-closeOnLinkClick: 'off',
-itemTriggerSubMenu: 'off',
-linkElement: '.responsive-menu-item-link',
-subMenuTransitionTime: 200,
-openMenu: function(){
-$(this.trigger).addClass(this.activeClass);
-$('html').addClass(this.openClass);
-$('.responsive-menu-button-icon-active').hide();
-$('.responsive-menu-button-icon-inactive').show();
-this.setButtonTextOpen();
-this.setWrapperTranslate();
-this.isOpen=true;
-},
-closeMenu: function(){
-$(this.trigger).removeClass(this.activeClass);
-$('html').removeClass(this.openClass);
-$('.responsive-menu-button-icon-inactive').hide();
-$('.responsive-menu-button-icon-active').show();
-this.setButtonText();
-this.clearWrapperTranslate();
-this.isOpen=false;
-},
-setButtonText: function(){
-if($('.responsive-menu-button-text-open').length > 0&&$('.responsive-menu-button-text').length > 0){
-$('.responsive-menu-button-text-open').hide();
-$('.responsive-menu-button-text').show();
-}},
-setButtonTextOpen: function(){
-if($('.responsive-menu-button-text').length > 0&&$('.responsive-menu-button-text-open').length > 0){
-$('.responsive-menu-button-text').hide();
-$('.responsive-menu-button-text-open').show();
-}},
-triggerMenu: function(){
-this.isOpen ? this.closeMenu():this.openMenu();
-},
-triggerSubArrow: function(subarrow){
-var sub_menu=$(subarrow).parent().siblings('.responsive-menu-submenu');
-var self=this;
-if(this.accordion=='on'){
-var top_siblings=sub_menu.parents('.responsive-menu-item-has-children').last().siblings('.responsive-menu-item-has-children');
-var first_siblings=sub_menu.parents('.responsive-menu-item-has-children').first().siblings('.responsive-menu-item-has-children');
-top_siblings.children('.responsive-menu-submenu').slideUp(self.subMenuTransitionTime, 'linear').removeClass('responsive-menu-submenu-open');
-top_siblings.each(function(){
-$(this).find('.responsive-menu-subarrow').first().html(self.inactiveArrow);
-$(this).find('.responsive-menu-subarrow').first().removeClass('responsive-menu-subarrow-active');
-});
-first_siblings.children('.responsive-menu-submenu').slideUp(self.subMenuTransitionTime, 'linear').removeClass('responsive-menu-submenu-open');
-first_siblings.each(function(){
-$(this).find('.responsive-menu-subarrow').first().html(self.inactiveArrow);
-$(this).find('.responsive-menu-subarrow').first().removeClass('responsive-menu-subarrow-active');
-});
-}
-if(sub_menu.hasClass('responsive-menu-submenu-open')){
-sub_menu.slideUp(self.subMenuTransitionTime, 'linear').removeClass('responsive-menu-submenu-open');
-$(subarrow).html(this.inactiveArrow);
-$(subarrow).removeClass('responsive-menu-subarrow-active');
-}else{
-sub_menu.slideDown(self.subMenuTransitionTime, 'linear').addClass('responsive-menu-submenu-open');
-$(subarrow).html(this.activeArrow);
-$(subarrow).addClass('responsive-menu-subarrow-active');
-}},
-menuHeight: function(){
-return $(this.container).height();
-},
-menuWidth: function(){
-return $(this.container).width();
-},
-wrapperHeight: function(){
-return $(this.wrapper).height();
-},
-setWrapperTranslate: function(){
-switch(this.animationSide){
-case 'left':
-translate='translateX(' + this.menuWidth() + 'px)'; break;
-case 'right':
-translate='translateX(-' + this.menuWidth() + 'px)'; break;
-case 'top':
-translate='translateY(' + this.wrapperHeight() + 'px)'; break;
-case 'bottom':
-translate='translateY(-' + this.menuHeight() + 'px)'; break;
-}
-if(this.animationType=='push'){
-$(this.pageWrapper).css({'transform':translate});
-$('html, body').css('overflow-x', 'hidden');
-}
-if(this.pushButton=='on'){
-$('#responsive-menu-button').css({'transform':translate});
-}},
-clearWrapperTranslate: function(){
-var self=this;
-if(this.animationType=='push'){
-$(this.pageWrapper).css({'transform':''});
-setTimeout(function(){
-$('html, body').css('overflow-x', '');
-}, self.animationSpeed);
-}
-if(this.pushButton=='on'){
-$('#responsive-menu-button').css({'transform':''});
-}},
-init: function(){
-var self=this;
-$(this.trigger).on(this.triggerTypes, function(e){
-e.stopPropagation();
-self.triggerMenu();
-});
-$(this.trigger).mouseup(function(){
-$(self.trigger).blur();
-});
-$('.responsive-menu-subarrow').on('click', function(e){
-e.preventDefault();
-e.stopPropagation();
-self.triggerSubArrow(this);
-});
-$(window).resize(function(){
-if($(window).width() > self.breakpoint){
-if(self.isOpen){
-self.closeMenu();
-}}else{
-if($('.responsive-menu-open').length>0){
-self.setWrapperTranslate();
-}}
-});
-if(this.closeOnLinkClick=='on'){
-$(this.linkElement).on('click', function(e){
-e.preventDefault();
-if(self.itemTriggerSubMenu=='on'&&$(this).is('.responsive-menu-item-has-children > ' + self.linkElement)){
-return;
-}
-old_href=$(this).attr('href');
-old_target=typeof $(this).attr('target')=='undefined' ? '_self':$(this).attr('target');
-if(self.isOpen){
-if($(e.target).closest('.responsive-menu-subarrow').length){
-return;
-}
-self.closeMenu();
-setTimeout(function(){
-window.open(old_href, old_target);
-}, self.animationSpeed);
-}});
-}
-if(this.closeOnBodyClick=='on'){
-$(document).on('click', 'body', function(e){
-if(self.isOpen){
-if($(e.target).closest('#responsive-menu-container').length||$(e.target).closest('#responsive-menu-button').length){
-return;
-}}
-self.closeMenu();
-});
-}
-if(this.itemTriggerSubMenu=='on'){
-$('.responsive-menu-item-has-children > ' + this.linkElement).on('click', function(e){
-e.preventDefault();
-self.triggerSubArrow($(this).children('.responsive-menu-subarrow').first());
-});
-}}
-};
-ResponsiveMenu.init();
-});</script>
-<script src='wp-content/cache/wpfc-minified/lkbke6o4/8f5l1.js' type="text/javascript"></script>
-<script src='wp-content/cache/wpfc-minified/7xwcw3xu/8f5l1.js' type="text/javascript"></script>
-</body>
 
-<!-- Mirrored from iphonerepairmumbai.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Jan 2020 09:30:00 GMT -->
-</html><!-- WP Fastest Cache file was created in 2.35855698586 seconds, on 16-12-19 14:29:21 -->
+	
+	<!-- ==============================================
+	Favicons
+	=============================================== -->
+	<!-- <link rel="shortcut icon" href="https://cutlex.com/flowers/images/favicon.ico"> -->
+	<!-- <link rel="apple-touch-icon" href="https://cutlex.com/flowers/images/apple-touch-icon.png"> -->
+	<!-- <link rel="apple-touch-icon" sizes="72x72" href="https://cutlex.com/flowers/images/apple-touch-icon-72x72.png"> -->
+	<!-- <link rel="apple-touch-icon" sizes="114x114" href="https://cutlex.com/flowers/images/apple-touch-icon-114x114.png"> -->
+	
+	<!-- ==============================================
+	CSS VENDOR
+	=============================================== -->
+	<link rel="stylesheet" type="text/css" href="images/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="images/fontawesome.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="images/owl_002.css">
+	<link rel="stylesheet" type="text/css" href="images/owl.css">
+	<link rel="stylesheet" type="text/css" href="images/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="images/animate.css">
+	
+	<!-- ==============================================
+	Custom Stylesheet
+	=============================================== -->
+	<link rel="stylesheet" type="text/css" href="images/style.css">
+	
+    <script src="images/modernizr.js"></script>
+    <style>
+    	@media only screen and (max-width: 1200px) and (min-width: 600px){
+    		
+    	}
+    	@media only screen and (max-width: 600px) and (min-width: 400px){
+    		#slider{
+    			display: none;
+    		}
+    		#p-responsive{
+    			font-size: 30px !important;
+    		}
+    		.caption-heading{
+    			font-size: 35px !important;
+    		}
+
+
+    	}
+    	@media only screen and (max-width: 400px) and (min-width: 200px){
+    		#slider{
+    			display: none;
+    		}
+    		#p-responsive{
+    			font-size: 25px !important;
+    		}
+    		.caption-heading{
+    			font-size: 30px !important;
+    		}
+    		.caption-supheading{
+    			font-size: 17px !important;
+    		}
+
+    	}
+    </style>
+
+</head>
+
+<body>
+
+	<!-- LOAD PAGE -->
+	<div class="animationload" style="display: none;">
+		<div class="loader" style="display: none;"></div>
+	</div>
+	
+	<!-- BACK TO TOP SECTION -->
+	<a href="#0" class="cd-top">Top</a>
+
+	<!-- HEADER -->
+    <div class="header header-1">
+
+    	<!-- TOPBAR -->
+
+
+		<!-- NAVBAR SECTION -->
+		<div class="navbar-main">
+			<div class="container">
+			    <nav id="navbar-example" class="navbar navbar-expand-lg">
+			        <a class="navbar-brand" href="/">
+						<img src="images/logo.png" alt="" style="width: 120px;">
+					</a>
+			        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			            <span class="navbar-toggler-icon"></span>
+			        </button>
+			        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+			            
+			            <a href="tel:+17862570344" class="btn btn-primary btn-nav ml-auto" style="z-index: 3;">Call Us (786) 257-0344</a>
+			        </div>
+			    </nav>
+		     	<!-- End Navbar -->
+			</div>
+		</div>
+
+    </div>
+
+	<!-- BANNER -->
+	<div class="section" style="    padding: 20px 0px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-12 col-lg-6">
+					<div class="container" style="padding: 15px 0px; color: #113245;">
+						<h1 class="caption-heading" style="    font-size: 35px;
+">Flower Delivery Service In <?php echo $query['city']?></h1>
+						<p class="caption-supheading" style="font-weight: 700; font-size: 20px; color: #8bad21;">Call Us To Know More About Our Sevice </p>
+						
+						<p style="    text-align: justify;">Send Flower online to your love one, We have large collection of flowers for every single ocations. Call us to book your service.</p>
+	    				<p id="p-responsive" style="font-weight: 900;
+    font-size: 40px;"><a href="tel:+17862570344" style="    color: #8bad21;">Call Us: (786) 257-0344</a></p>
+    <p style="text-transform: uppercase;font-weight: 700;
+    font-size: 20px;color: #113245;">Trusted Local Business</p>
+    <img class="img-responsive" src="images/stars.webp">
+    <p style="color: grey;
+    font-size: small;
+    text-transform: uppercase;">Trust Score 9.6 | 350 Reviews</p>
+	    			</div>
+				</div>
+				<div class="col-lg-6">
+					<img id="slider" class="img-responsive" src="images/bouqs-app-clone-banner.png" style="    height: 489px;
+    margin-top: -18px;">
+				</div>
+			</div>
+		</div>
+	</div>
+    		
+
+	<!-- WHY CHOOSE US? -->
+	<div class="section">
+		<div class="content-wrap">
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-sm-12 col-md-12">
+						<h2 class="text-center" style="color: #113245;">
+							Why Choose Us?
+						</h2>
+						<p class="subheading text-center mb-5">We have a large collection of flowers for different occations.</p>
+					</div>
+					
+				</div>
+				
+				<div class="row">
+					<!-- Item 1 -->
+					<div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+						<div class="box-icon-1 text-center">
+							<div class="icon">
+								<i class="fa fa-globe"></i>
+							</div>
+							<div class="body-content">
+								<h4>Best Local Service</h4>
+								<p>We deal in multiple type of flowers all is very good quality.</p>
+							</div>
+						</div>
+					</div>
+					<!-- Item 2 -->
+					<div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+						<div class="box-icon-1 text-center">
+							<div class="icon">
+								<i class="fa fa-certificate"></i>
+							</div>
+							<div class="body-content">
+								<h4>Certified Expert</h4>
+								<p>Most of our teams members are studied their course in agriculture and they are expert.</p>
+							</div>
+						</div>
+					</div>
+					<!-- Item 3 -->
+					<div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+						<div class="box-icon-1 text-center">
+							<div class="icon">
+								<i class="fa fa-thumbs-up"></i>
+							</div>
+							<div class="body-content">
+								<h4>Affordabel Pricing</h4>
+								<p>Our price ranges are fit with everyone pockets. We only chage for the service we give you.</p>
+							</div>
+						</div>
+					</div>
+					<!-- Item 4 -->
+					<div class="col-sm-12 col-md-6 col-lg-3 mb-4">
+						<div class="box-icon-1 text-center">
+							<div class="icon">
+								<i class="fa fa-star"></i>
+							</div>
+							<div class="body-content">
+								<h4>High Quality Services</h4>
+								<p>One of our team member come to your home and plant flowers with our expert techniques.</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- CTA -->
+	<div class="section bgi-cover-center" data-background="images/dummy-img-1920x900-3.jpg" style="background-image: url(images/dummy-img-1920x900-3.jpg);">
+		<div class="content-wrap py-0">
+			<div class="container">
+				<div class="row align-items-end">
+					
+					<div class="col-sm-12 col-md-12 col-lg-7">
+						
+						<div class="text-white mt-5">
+							<h1 class="section-heading no-after text-primary" style="color: black !important;
+    text-shadow: 2px 0px 2px white;">
+								Planning to gift flowers to Your loved One?
+							</h1>
+							<p class="mb-5" style="color: black;
+    text-shadow: 1px 0px 8px wheat;">Call us on the provided number and book your flower package today! We are trusted that serve flowers online.</p>
+
+						</div>
+						<a href="tel:+17862570344" class="btn btn-primary">Call Now (786) 257-0344</a>	
+						<div class="spacer-content"></div>
+					</div>
+
+					<div class="col-sm-12 col-md-12 col-lg-5">
+						<div class="img-cta">
+							<img src="images/wedding-couple.png" alt="" class="img-fluid">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- WHY CHOOSE -->
+	<div class="section">
+		<div class="content-wrap">
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-sm-12 col-md-12">
+						<h2 class="text-center" style="color: #113245;">
+							How We Work
+						</h2>
+						<p class="subheading text-center mb-5">Schedule Our service In 3 Easy Steps.</p>
+					</div>
+					
+				</div>
+				
+				<div class="row">
+					<!-- Item 1 -->
+					<div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+						<div class="box-image-1">
+							<i class="fa fa-phone" aria-hidden="true" style="font-size: 60px;
+    background: #8bad21;
+    color: white;
+    padding: 20px 28px;
+    border-radius: 50px;"></i>
+							<div class="body-content">
+								<h4>Step 1: Call Us</h4>
+								<p>Call to our expert and fell free to know about our services.</p>
+							</div>
+						</div>
+					</div>
+					<!-- Item 2 -->
+					<div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+						<div class="box-image-1">
+							<i class="fa fa-calendar" aria-hidden="true" style="font-size: 51px;
+    background: #8bad21;
+    color: white;
+    padding: 25px 27px;
+    border-radius: 50px;"></i>
+
+							<div class="body-content">
+								<h4>Step 2: Book Your Flowers</h4>
+								<p>Book flowers as per your requirement, We have fresh flowers</p>
+							</div>
+						</div>
+					</div>
+					<!-- Item 3 -->
+					<div class="col-sm-12 col-md-12 col-lg-4 mb-4">
+						<div class="box-image-1">
+							<i class="fa fa-home" aria-hidden="true" style="font-size: 51px;
+    background: #8bad21;
+    color: white;
+    padding: 25px 27px;
+    border-radius: 50px;"></i>
+
+							<div class="body-content">
+								<h4>Step 3: Receive At Doorstep</h4>
+								<p>After receive your booking we ensure that we delivered it within 1 day.</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<!-- OUR PARTNERS -->
+	<div class="section bg-gray-light">
+		<div class="content-wrap py-5">
+			<div class="container">
+				
+				<div class="row gutter-5">
+					<div class="col-6 col-md-4 col-lg-2">
+						<a href="#"><img src="images/client1.png" alt="" class="img-fluid img-border"></a>
+					</div>
+					<div class="col-6 col-md-4 col-lg-2">
+						<a href="#"><img src="images/client2.png" alt="" class="img-fluid img-border"></a>
+					</div>
+					<div class="col-6 col-md-4 col-lg-2">
+						<a href="#"><img src="images/client3.png" alt="" class="img-fluid img-border"></a>
+					</div>
+					<div class="col-6 col-md-4 col-lg-2">
+						<a href="#"><img src="images/client4.png" alt="" class="img-fluid img-border"></a>
+					</div>
+					<div class="col-6 col-md-4 col-lg-2">
+						<a href="#"><img src="images/client5.png" alt="" class="img-fluid img-border"></a>
+					</div>
+					<div class="col-6 col-md-4 col-lg-2">
+						<a href="#"><img src="images/client6.png" alt="" class="img-fluid img-border"></a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- FOOTER SECTION -->
+	<div class="footer">
+		<div class="content-wrap pb-0">
+			<div class="container">
+				
+				<div class="row">
+					<div class="col-sm-6 col-md-6 col-lg-3">
+						<div class="footer-item">
+							<a href="/">
+								<img src="images/logo_w.png" alt="logo bottom" class="logo-bottom" style="width: 120px;">
+							</a>
+							
+							<div class="spacer-30"></div>
+							<p>Getting into the flower industry or flower business is easy, 
+but the survival is the toughest. In the present internet dominated 
+scenario, to make your flower boutique successful, you need to make a 
+great online presence...</p>
+							<!-- <div class="sosmed-icon icon-bg-primary d-inline-flex">
+								<a href="#"><i class="fa fa-facebook"></i></a> 
+								<a href="#"><i class="fa fa-twitter"></i></a> 
+								<a href="#"><i class="fa fa-instagram"></i></a> 
+								<a href="#"><i class="fa fa-pinterest"></i></a> 
+								<a href="#"><i class="fa fa-linkedin"></i></a> 
+							</div> -->
+						</div>
+					</div>					
+
+					<div class="col-sm-6 col-md-6 col-lg-3">
+						<div class="footer-item">
+							<div class="footer-title">
+								Contact Info
+							</div>
+							
+							<div class="row mb-3">
+								<div class="col-5">Address :</div>
+								<div class="col-7">99 Park Jomblo Street, Panam, Pekanbaru 28292, Riau</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-5">Phone  :</div>
+								<div class="col-7">(786) 257-0344</div>
+							</div>
+							<!-- <div class="row mb-3">
+								<div class="col-5">Fax :</div>
+								<div class="col-7">(123) 65412309</div>
+							</div> -->
+							<div class="row mb-3">
+								<div class="col-5">Email :</div>
+								<div class="col-7">info@brosflorish.com</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-6 col-lg-3">
+						<div class="footer-item">
+							<div class="footer-title">
+								Opening Hours
+							</div>
+							
+							<div class="row mb-3">
+								<div class="col-5">Mon - Fri :</div>
+								<div class="col-7">07 AM - 04 PM</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-5">Saturday :</div>
+								<div class="col-7">07 AM - 12 AM</div>
+							</div>
+							<!-- <div class="row mb-3">
+								<div class="col-5">Friday :</div>
+								<div class="col-7">Closed</div>
+							</div> -->
+								
+						</div>
+					</div>
+					
+					<div class="col-sm-6 col-md-6 col-lg-3">
+						<img src="images/complex-img.png" alt="" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="fcopy">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-12">
+						<p class="ftex">Copyright © 2019</p> 
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<!-- JS VENDOR -->
+	<script src="images/jquery_002.js"></script>
+	<script src="images/bootstrap.js"></script>
+	<script src="images/owl.js"></script>
+	<script src="images/jquery.js"></script>
+
+	<!-- SENDMAIL -->
+	<script src="images/validator.js"></script>
+	<script src="images/form-scripts.js"></script>
+
+	<script src="images/script.js"></script>
+
+
+</body></html>
